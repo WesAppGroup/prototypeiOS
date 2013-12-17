@@ -1,0 +1,145 @@
+/* MENUS CSS */
+#menus_content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 10%;
+  background-color:#c5c7d3;
+  width: 100%;
+}
+#header_links {
+  color: white;
+}
+
+/* MENUS CONTENT*/
+/*#menus_content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 10%;
+  background-color:#c5c7d3;
+  width: 100%;
+}*/
+
+.menus_img {
+  display: inline-block;
+  float: left;
+  width: 15%;
+  height: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.menus_img img {
+  height: 70%;
+}
+
+.menus_name {
+display: inline-block;
+float: left;
+width: 70%;
+padding-top: 10px;
+}
+
+.menus_go_home {
+  width: 15%;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  float: right;
+  border-left: 1px solid #ffffff;
+}
+
+.menus_header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 10%;
+  background-color: #242833;
+  text-align: center;
+}
+
+.menus_header span {
+  margin-left: 2%;
+  font-family: Raleway;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+
+
+.menu_meal {
+  display: inline-block;
+  background-color: #242833;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  
+  width: 95%;
+  height: auto;
+  float: left;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.menu_items {
+  display: inline-block;
+  background-color: #458179;
+  
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 95%;
+  min-height: 50%;
+  height: auto;
+  float: left;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: white;
+}
+
+p{
+  padding: 3px; 
+  margin: 2px;
+}
+
+/* Food categoies */
+.kosher{
+  color: #F0E68C;
+}
+
+.classics{
+  color: #833b3e;
+}
+
+.vegan{
+  color: #9ACD32;
+}
+
+.stockpot{
+  color: blue;
+}
+
+.pastabilities{
+  color: purple;
+}
+
+.stockpot{
+ color: #DAA520;
+}
+
+.cardinal{
+ color: #4B0082;
+}
+
+.mongolian{
+  color: #8B008B;
+}
+
+.hearth{
+  color: #46647c
+}

@@ -1,0 +1,96 @@
+#header_links {
+  color: white;
+}
+#hours_content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 10%;
+  background-color:#c5c7d3;
+  width: 100%;
+}
+.hour_class {
+  padding: 5%;
+  background-color: white;
+  margin: 5%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.48);
+}
+.hours_div {
+  background-color: white;
+  margin: 5%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.48);
+}
+
+.hours_label {
+  display: inline-block;
+  font-size: initial;
+}
+
+.hours_header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 10%;
+  background-color: #242833;
+  text-align: none;
+}
+
+.hours_header span {
+  margin-left: 2%;
+  font-family: Raleway;
+  font-size: 30px;
+  color: #ffffff;
+}
+.hours_name {
+display: inline-block;
+float: left;
+width: 70%;
+text-align: center;
+padding-top: 10px;
+}
+.hours_go_home {
+  width: 15%;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  float: right;
+  border-left: 1px solid #ffffff;
+}
+.hours_img {
+  display: inline-block;
+  float: left;
+  width: 15%;
+  height: 100%;
+  padding: 0px 0px 0px 0px;
+}
+.hours_img img {
+  height: 70%;
+}
+
+.hour_class {
+  padding-bottom: 5%;
+}
+
+.hours_extra {
+  font-size: initial;
+  font-style: italic;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.71);
+}
+
+#hours_title {
+  font-size: large;
+font-weight: bold;
+color: rgba(15, 15, 15, 0.74);
+}
+
+#dining {
+  border-color: rgba(255, 29, 29, 0.53);
+}
+#other {
+  border-color: rgba(78, 78, 179, 0.61);
+}
+#library {
+  border-color: rgba(255, 133, 0, 0.39);
+}

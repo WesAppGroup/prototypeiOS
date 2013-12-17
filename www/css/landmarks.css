@@ -1,0 +1,95 @@
+/* LANDMARKS CSS */
+
+/* ====== Landmarks List =====*/
+#landmarks_content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 10%;
+  bottom: 0px;
+  height: 90%;
+  background-color: #c5c7d3;
+}
+
+#lm_list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lm_list li {
+  margin: 10px 5% 20px 5%;
+  font-family: Raleway;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  width: 89%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.lm-info {
+  display: block;
+  background-color: #242833;
+  border-left: 15px solid #458179;
+  width:100%;
+}
+
+.lm-name {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  border-bottom: 1px solid #ffffff;
+  border-top-right-radius: 5px;
+}
+
+.lm-also {
+  width: 98%;
+  padding: 10px 5px 10px 5px;
+  font-size: 10px;
+  height: auto;
+  border-bottom: 1px solid #ffffff;
+}
+
+.lm-desc {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 5px 10px 5px;
+  height: auto;
+  text-align: justify;
+  border-bottom-right-radius: 5px;
+}
+
+/* ====== Landmarks Search ====== */
+#lm_search_bar {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: block;
+  width: 97%;
+  height: 70px;
+  position: relative;
+}
+#lm_bar {
+  display: block;
+  width: 70%;
+  height: 70%;
+  float: left;
+  vertical-align: middle;
+}
+#lm_bar input {
+  width: 100%;
+  height: 100%;
+  font-family: Raleway;
+  font-size: 14px;
+  border-radius: 5px;
+}
+#landmarks_icon {
+  margin-left: 20px;
+  display: inline-block;
+  height: 70%;
+  width: 50px;
+  background: #242833;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 5.5;
+  vertical-align: middle;
+}
