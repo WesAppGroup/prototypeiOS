@@ -1,0 +1,123 @@
+/* MENUS CSS */
+#menus_content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 10%;
+  background-color:#c5c7d3;
+  width: 100%;
+}
+
+.menus_img {
+  display: inline-block;
+  float: left;
+  width: 15%;
+  height: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.menus_img img {
+  height: 70%;
+}
+
+.menus_name {
+display: inline-block;
+float: left;
+width: 70%;
+padding-top: 10px;
+}
+
+.menus_go_home {
+  width: 15%;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  float: right;
+  border-left: 1px solid #ffffff;
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+
+.menus_header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 10%;
+  background-color: #242833;
+  text-align: center;
+}
+
+.menus_header span {
+  margin-left: 2%;
+  font-family: Raleway;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+
+#menu_content p {
+  padding: 0px;
+  margin: 0px;
+}
+.menu_meal {
+  display: block;
+  background-color: #ffffff;
+  color: rgba(15, 15, 15, 0.74);
+  font-size: large;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 29, 29, 0.53);
+  padding-bottom: 5px;
+}
+.meal {
+  padding: 5%;
+  background-color: white;
+  margin: 5%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.48);
+}
+
+.menu-item {
+  padding-left: 15px;
+  display: block;
+}
+
+/* Food categoies */
+.kosher{
+  color: #000000;
+}
+
+.classics{
+  color: #833b3e;
+}
+
+.vegan{
+  color: #9ACD32;
+}
+
+.stockpot{
+  color: blue;
+}
+
+.pastabilities{
+  color: purple;
+}
+
+.stockpot{
+ color: #DAA520;
+}
+
+.cardinal{
+ color: #4B0082;
+}
+
+.mongolian{
+  color: #00008B;
+}
+
+.hearth{
+  color: #46647c
+}
+.m-station {
+  font-weight: bold;
+}

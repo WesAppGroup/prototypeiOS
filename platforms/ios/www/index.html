@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <!-- Custom stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!--link rel="stylesheet" type="text/css" href="css/home.css" /-->
+    <!-- <link rel="stylesheet" type="text/css" href="css/events.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/wesmaps.css" />
+    <link rel="stylesheet" type="text/css" href="css/donate.css" />
+    <link rel="stylesheet" type="text/css" href="css/menus.css" />
+    <link rel="stylesheet" type="text/css" href="css/hours.css" />
+    <link rel="stylesheet" type="text/css" href="css/landmarks.css" />
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>    
+
+    <!-- Events Scripts -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/oms.min.js"></script>
+    <!-- <link type="text/css" rel="stylesheet" href="http://mmenu.frebsite.nl/examples/tooltips/css/jquery.mmenu.all.css" /> -->
+    <link type="text/css" rel="stylesheet" href="css/events.css" />
+    <script type="text/javascript" src="http://jawj.github.io/OverlappingMarkerSpiderfier/bin/oms.min.js"></script>
+    <link type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="http://use.edgefonts.net/abril-fatface;lancelot;paytone-one;passion-one;megrim;plaster;geo;codystar;geostar;monoton.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Erica+One|Monofett|Chivo:400,400italic,900|Open+Sans:400,800|Orbitron:400,900,700,500' rel='stylesheet' type='text/css'>
+    <!-- // <script type="text/javascript" src="http://mmenu.frebsite.nl/examples/tooltips/js/jquery.mmenu.min.all.js"></script> -->
+    
+
+     <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/hours.js"></script>
+    <script type="text/javascript" src="js/hours_data.js"></script>
+    <script type="text/javascript" src="js/parse_events.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/wesmaps.js"></script>
+    <script type="text/javascript" src="js/events.js"></script>
+    <script type="text/javascript" src="js/menus.js"></script>
+   
+    <script type="text/javascript" src="js/landmarks.js"></script>
+    
+    <!-- Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-45868211-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+
+    <title>Prototype</title>
+  </head>
+  <body>
+    <div class="page" id="home">
+      <div class="header" id="home_header">
+        <img src="img/logo.png" />
+      </div>
+      
+      <div class="content" id="home_content">
+        <ul class="listview">
+          <li>
+            <a href="#" class="goto_page" value="wesmaps">
+              <div class="fance wesmaps"><img src="img/wesmaps.png" /></div>
+              <div class="button-text">WesMaps</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="event_nav" class="goto_page" value="events">
+              <div class="fance events"><img src="img/events.png" /></div>
+              <div class="button-text">Events</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="goto_page" value="menus">
+              <div class="fance menus"><i class="fa fa-cutlery fa-2x"></i></div>
+              <div class="button-text">Hours and Menus</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="goto_page" value="landmarks">
+              <div class="fance landmarks"><img src="img/landmarks.png" /></div>
+              <div class="button-text">Landmarks</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="goto_page" value="donate">
+              <div class="fance donate"><img src="img/donate.png" /></div>
+              <div class="button-text">Donate</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ========== WESMAPS PAGE =========== -->
+    <div class="page hidden" id="wesmaps">
+
+      <div class="wesmaps_header">
+        <div class="wm-bird">
+          <img src="img/logo.png" />
+        </div>
+        <div class="wm-name">
+          <span>WesMaps</span>
+        </div>
+        <div class="wm-go-home">
+          <a href="#" class="goto_page" value="home">
+            <i class="fa fa-home fa-2x"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="wesmaps_content">
+
+        <div id="wm_search_bar"> 
+          <div id="wm_bar">
+            <input type="search" placeholder="Search for courses">
+          </div>
+          <div id="wm-s-f">
+            <select name="semester">
+              <option selected disabled>Term...</option>
+              <option value="Summer">Summer</option>
+              <option value="Fall">Fall</option>
+              <option selected="selected" value="Spring">Spring</option>
+            </select>
+          </div>
+          <div id="wm_icon">
+            <i class="fa fa-search fa-3x"></i>
+          </div>
+        </div>
+
+        <div id="wm_wrapper">
+          <ul id="wm_courses">
+          </ul>
+       </div>
+      </div>
+
+    </div>
+
+    <!-- ========== EVENTS PAGE =========== -->
+    <div class="page hidden" id="events">
+
+      <div class="content" id="events_content">
+        <div id="e_header">
+         <a href="#" class="goto_page" value="events_list">
+          <span id="openSidebar"></span>
+         <span style="
+            display: inline-block;
+            margin-left: 36px;
+          padding-top: 4px;
+          color: rgba(223, 39, 39, 0.92);
+          text-shadow: .5px .5px rgba(0, 0, 0, 1);
+          font-size: 30px;
+        ">MORE</span>
+      </a>
+         <img src="img/logo.png">
+         <div id="e_title">EVENTS</div>
+         <div id="fixer"></div>
+          <div id="minibar">
+            <input type="checkbox" name="map_old" id="map_old"><label for="map_old">Display Old
+            Events</label>
+          </div>
+        </div>
+        <div id="map_area">
+            <div id="map-canvas">
+            </div>
+        </div>
+        <div id="e_footer">
+          <a href="#" class="goto_page" value="home">
+            <div id="e_home_button">
+              <i class="fa fa-home fa-2x"></i>
+              <div>HOME</div>
+            </div>
+          </a>
+      </div>
+   
+
+      </div>
+    </div>
+
+    <!-- ========== EVENTS_LIST PAGE =========== -->
+    <div class="page hidden" id="events_list">
+
+      <div class="content" id="events_list_content">
+          <div>
+            <div>
+              <div class="events_list_header">
+                <img src="img/logo.png">
+                <div>EVENTS</div>
+              </div>
+              <div id="minibar">
+                <input type="checkbox" name="old" id="e_old"><label for="e_old">Display Old
+                Events</label>
+              </div>
+              <div id="events_list_stuff">
+                <div id="filter_search">
+                  <div class="filter_options">
+                   <select id="events_select" class="dropdown">
+                      <option id="e_time">Sort: Time</option>
+                      <option id="e_category">Sort: Category</option>
+                      <option id="e_location">Sort: Location</option>
+                    </select>
+                    <!-- <input type="radio" name="group1" id="e_time" >Time
+                    <input type="radio" name="group1" id="e_category" >Category
+                    <input type="radio" name="group1" id="e_location" checked>Location -->
+                  </div>
+                  <div id="input-div">
+                    <input type="text" id="e_search_input" placeholder ="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'" >
+                  </div>
+                </div>
+                <ul id="events_ul">
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="events_list_footer">
+        <a href="#" class="goto_page" value="home">
+          <div class="events_list_go_home">
+            <i class="fa fa-home fa-1x"></i>
+            <span>HOME</span>
+          </div>
+        </a>
+        <a href="#" class="goto_page" value="events">
+          <div class="events_list_go_map">
+            <i class="fa fa-map-marker fa-1x"></i>
+            <span>MAP</span>
+          </div>
+        </a>
+      </div>
+      </div>
+    </div>
+
+
+     <!-- ========== EVENTS_READ_MORE PAGE =========== -->
+    <div class="page hidden" id="events_read_more">
+      <div class="events_list_header">
+        <img src="img/logo.png">
+        <div>EVENTS</div>
+      </div>
+      <div class="content" id="events_read_more2">
+        <button id="read_more_button" onclick="">
+          <div class="arrow-left"></div>
+          <a href="#" class="goto_page" value="events" id="read_more_a">BACK TO MAP</a>
+        </button>
+        
+        <h4 id="read_more_title"></h4>
+            <div id="morecontent"></div>
+      </div>
+    </div>
+
+    <!-- ========== MENUS PAGE =========== -->
+    <div class="page hidden" id="menus">
+      <div class="menus_header">
+        <div class="menus_img">
+          <img src="img/logo.png" />
+        </div>
+        <div id="menus-link">Menus</div>
+        <div id="hours-link" class="inactive-link">Hours</div>
+        <div class="menus_go_home">
+          <a href="#" class="goto_page" value="home">
+            <i class="fa fa-home fa-2x"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="menus_content"></div>
+
+      <div id="hours_content" class="hidden"></div>
+
+    </div>
+
+    <!-- ========== LANDMARKS PAGE =========== -->
+    <div class="page hidden" id="landmarks">
+      <div class="wesmaps_header">
+        <div class="wm-bird">
+          <img src="img/logo.png" />
+        </div>
+        <div class="wm-name">
+          <span>Landmarks</span>
+        </div>
+        <div class="wm-go-home">
+          <a href="#" class="goto_page" value="home">
+            <i class="fa fa-home fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <div id="landmarks_content">
+				<div id="lm_search_bar"> 
+          <div id="lm_bar">
+            <input type="search" placeholder="Search for landmarks">
+          </div>
+          <div id="landmarks_icon">
+            <i class="fa fa-search fa-3x"></i>
+          </div>
+        </div>
+				<div id="lm_wrapper">
+          <ul id="lm_list">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== DONATE PAGE =========== -->
+    <div class="page hidden" id="donate">
+      <div class="wesmaps_header">
+        <div class="wm-bird">
+          <img src="img/logo.png" />
+        </div>
+        <div class="wm-name">
+          <span>Donate</span>
+        </div>
+        <div class="wm-go-home">
+          <a href="#" class="goto_page" value="home">
+            <i class="fa fa-home fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <div id="donate_content">
+        <iframe src="http://thisiswhy.wesleyan.edu/waystogive"></iframe>
+      </div>
+    </div>
+
+
+  </body>
+</html>

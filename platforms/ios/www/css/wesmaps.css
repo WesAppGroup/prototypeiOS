@@ -1,0 +1,268 @@
+/* ======= WESMAPS HEADER ========= */
+.wesmaps_header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 10%;
+  background-color: #242833;
+  text-align: center;
+}
+.wm-go-home {
+  position: relative;
+  height: 100%;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  float: right;
+  border-left: 1px solid #ffffff;
+  text-align: center;
+}
+.wm-bird {
+  display: inline-block;
+  float: left;
+  width: 10%;
+  height: 100%;
+  padding: 0px 0px 0px 0px;
+}
+.wm-bird img {
+  height: 70%;
+}
+.wm-name {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  padding-top: 10px;
+}
+.wesmaps_header img {
+  margin-top: 5px;
+  height: 70%;
+  width: auto;
+}
+.wesmaps_header span {
+  margin-left: 30px;
+  font-family: Raleway;
+  font-size: 30px;
+  color: #ffffff;
+}
+/* =========   WESMAPS SEARCH ========= */
+body {
+  background-color: #c5c7d3;
+}
+.wesmaps_content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 10%;
+  bottom: 0px;
+  background-color: #c5c7d3;
+}
+
+/* COURSE LIST */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#wm_courses li {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20px;
+  height: 70px;
+  text-align: center;
+  width: 100%;
+}
+.wm_c_dnum {
+  display: inline-block;
+  background-color: #458179;
+  width: 25%;
+  height: 100%;
+  float: left;
+  margin-left: 3%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.wm_c_dep {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.wm_c_info {
+  display: inline-block;
+  background-color: #242833;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 70%;
+  height: 100%;
+  float: left;
+  margin-left: -5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.wm_c_title {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 75%;
+  float: left;
+}
+.wm_c_expand {
+  display: inline-block;
+  height: 60px;
+  margin-top: 5px;
+  position: absolute;
+  right: 5%;
+}
+/* expanded course */
+.wm-table {
+  display: block;
+  width: 100%;
+}
+.wm-table table {
+  width: 100%;
+}
+.wm-info-expanded {
+  margin-bottom: 10px;
+}
+.wm_c_desc {
+  width: 100%;
+  color: #ffffff;
+  background-color: #242833;
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 1em;
+  border-color: grey;
+  text-align: justify;
+  border-top: 1px solid #555555;
+  padding: 5px 5px 0px 5px;
+  border-radius: 10px;
+}
+.wm_c_prof {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  font-size: 15px;
+  border-top: 1px solid #555555;
+  padding: 5px 0px 5px 0px;
+}
+.wm_c_time {
+  display: inline-block;
+  font-size: 15px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid #555555;
+  padding: 5px 0px 5px 0px;
+}
+.wm_c_loc {
+  font-size: 15px;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid #555555;
+  padding: 5px 0px 5px 0px;
+}
+.wm_c_seats {
+  font-size: 15px;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid #555555;
+  padding: 5px 0px 5px 0px;
+}
+.wm_c_sem {
+  font-size: 15px;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid #555555;
+  padding: 5px 0px 5px 0px;
+}
+.wm_c_gea {
+  font-size: 15px;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid #555555;
+  padding: 5px 0px 5px 0px;
+}
+
+.goto_page span, i {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* SEARCH BAR */
+#wm_search_bar {
+  display: block;
+  width: 98%;
+  height: 70px;
+  margin: 10px;
+  position: relative;
+}
+#wm_bar {
+  display: block;
+  width: 50%;
+  height: 70%;
+  float: left;
+  vertical-align: middle;
+}
+#wm_bar input {
+  width: 100%;
+  height: 100%;
+  font-family: Raleway;
+  font-size: 14px;
+  border-radius: 5px;
+}
+#wm_icon {
+  display: inline-block;
+  height: 70%;
+  width: 50px;
+  background: #242833;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 5.5;
+  vertical-align: middle;
+}
+
+/* SEMESTER SEARCH FILTER */
+#wm-s-f {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  margin-left: 3px;
+}
+#wm-s-f select {
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px #242833 solid;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  color: #242833;
+  font-family: Raleway;
+  padding: 5px 4px;
+  background:#c5c7d3;
+  text-align: center;
+  width: 100%;
+}
+
+/* HIDDEN LINKS */
+.hidden-link {
+  display: none;
+}
