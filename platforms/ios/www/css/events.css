@@ -1,30 +1,14 @@
 html, body {
-    padding: 0;
     margin: 0;
     /*overflow: auto; */
     text-transform: none;
 }
 body {
-    /*font-family: 'monoton', sans-serif;*/
-    /*font-family: MyWebFont;*/
-    /*font-family: 'Erica One', cursive;*/
-    /*font-family: 'Chivo', sans-serif;*/
-    /*font-family: 'Open Sans', sans-serif;*/
-    /*font-family: 'Orbitron', sans-serif;*/
     font-style: 700;
     font-family: Raleway;
-    /*font-size: 16px;*/
-    /*font-size: light;*/
-    /*line-height: 22px;*/
-    /*-webkit-text-size-adjust: none;*/
 }
-/*
-@font-face{ 
-    font-family: 'MyWebFont';
-    src: url('fonts/bebas-neue/BebasNeue.otf');
-}
-*/
- .pull-right {
+
+.pull-right {
     float: right;
 }
 #map-canvas {
@@ -123,6 +107,7 @@ a, a:hover {
     top: 0px;
     left: 0px;
     right:0px;
+    margin-top: 20px;
 }
 #e_header img {
     height:80%;
