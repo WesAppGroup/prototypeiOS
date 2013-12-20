@@ -9,10 +9,13 @@
   text-align: center;
 }
 .wm-go-home {
+  position: relative;
+  height: 100%;
   display: inline-block;
   padding: 10px 10px 10px 10px;
   float: right;
   border-left: 1px solid #ffffff;
+  text-align: center;
 }
 .wm-bird {
   display: inline-block;
@@ -80,6 +83,8 @@ ul {
   height: 100%;
   float: left;
   margin-left: 3%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .wm_c_dep {
   margin-top: 5px;
@@ -94,6 +99,8 @@ ul {
   height: 100%;
   float: left;
   margin-left: -5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .wm_c_title {
   display: inline-block;

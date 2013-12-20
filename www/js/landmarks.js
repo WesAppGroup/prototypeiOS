@@ -53,7 +53,7 @@ function startLandmarks() {
   function writeLandmark(c) {
     var oTag = /<a\b[^>]*>/i;
     var cTag = /<\/a>/i;
-    var cd = c.description.replace(oTag,"").replace(cTag,"");
+    var cd = c.description ? c.description.replace(oTag,"").replace(cTag,"") : "No description";
 
     $("#lm_list").append("<li><div class='lm-info'>"+
                               "<div class='lm-name'>"+c.name+"</div>"+

@@ -42,13 +42,10 @@ function startApp() {
     else if ($(this).attr('value') === "menus") { 
       firstMenusVisit ? startMenus() : function(){};
       firstMenusVisit = false;
+      startHours();
       $(".page").addClass("hidden");
       $("#menus").removeClass("hidden");
     }
-    else if ($(this).attr('value') === "hours") { 
-      $(".page").addClass("hidden");
-      $("#hours").removeClass("hidden");
-    } 
     else if ($(this).attr('value') === "donate") {
       $(".page").addClass("hidden");
       $("#donate").removeClass("hidden");
@@ -72,6 +69,4 @@ function startApp() {
     $($(".wm-go-home > a")[0]).click();
   };
   document.addEventListener("backbutton", backListen, false);
-
-  console.log("===========================================");
 }

@@ -7,19 +7,6 @@
   background-color:#c5c7d3;
   width: 100%;
 }
-#header_links {
-  color: white;
-}
-
-/* MENUS CONTENT*/
-/*#menus_content {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 10%;
-  background-color:#c5c7d3;
-  width: 100%;
-}*/
 
 .menus_img {
   display: inline-block;
@@ -46,6 +33,9 @@ padding-top: 10px;
   padding: 10px 10px 10px 10px;
   float: right;
   border-left: 1px solid #ffffff;
+  text-align: center;
+  position: relative;
+  height: 100%;
 }
 
 .menus_header {
@@ -66,50 +56,35 @@ padding-top: 10px;
 }
 
 
-
+#menu_content p {
+  padding: 0px;
+  margin: 0px;
+}
 .menu_meal {
-  display: inline-block;
-  background-color: #242833;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  
-  width: 95%;
-  height: auto;
-  float: left;
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  font-size: 30px;
-  color: white;
-  text-align: center;
+  display: block;
+  background-color: #ffffff;
+  color: rgba(15, 15, 15, 0.74);
+  font-size: large;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 29, 29, 0.53);
+  padding-bottom: 5px;
 }
-.menu_items {
-  display: inline-block;
-  background-color: #458179;
-  
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  width: 95%;
-  min-height: 50%;
-  height: auto;
-  float: left;
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-top: 0px;
-  margin-bottom: 5px;
-  font-size: 15px;
-  color: white;
+.meal {
+  padding: 5%;
+  background-color: white;
+  margin: 5%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.48);
 }
 
-p{
-  padding: 3px; 
-  margin: 2px;
+.menu-item {
+  padding-left: 15px;
+  display: block;
 }
 
 /* Food categoies */
 .kosher{
-  color: #F0E68C;
+  color: #000000;
 }
 
 .classics{
@@ -137,9 +112,12 @@ p{
 }
 
 .mongolian{
-  color: #8B008B;
+  color: #00008B;
 }
 
 .hearth{
   color: #46647c
+}
+.m-station {
+  font-weight: bold;
 }

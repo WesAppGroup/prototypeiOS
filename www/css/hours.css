@@ -1,5 +1,24 @@
-#header_links {
+#menus-link {
   color: white;
+  display: inline-block;
+  position: relative;
+  font-size: 2.0em;
+  height: 100%;
+  border-right: 1px solid #ffffff;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+#hours-link {
+  color: white;
+  display: inline-block;
+  position: relative;
+  font-size: 2.0em;
+  height: 100%;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+.inactive-link {
+  opacity: 0.3;
 }
 #hours_content {
   position: absolute;
@@ -56,6 +75,9 @@ padding-top: 10px;
   padding: 10px 10px 10px 10px;
   float: right;
   border-left: 1px solid #ffffff;
+  text-align: center;
+  position: relative;
+  height: 100%;
 }
 .hours_img {
   display: inline-block;

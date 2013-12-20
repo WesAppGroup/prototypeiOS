@@ -1,13 +1,21 @@
 function startHours() {
 	console.log("starting hours");
 
-	// color the Hours and Menus elements to indicate which page is
-	// currently active
 
-	var menu_header = $("#header_link1")[0];
-	var hours_header = $("#header_link2")[0];
-	menu_header.style.color = "rgba(126, 126, 126, 0.62)";
-	hours_header.style.color = "white";
+  /* Listener to hide and show menus or hours */
+  $(document).on("click", "#menus-link", function() {
+    $("#hours_content").addClass("hidden");
+    $("#menus_content").removeClass("hidden");
+    $("#menus-link").removeClass("inactive-link");
+    $("#hours-link").addClass("inactive-link");
+  });
+  $(document).on("click", "#hours-link", function() {
+    $("#hours-link").removeClass("inactive-link");
+    $("#menus-link").addClass("inactive-link");
+    $("#menus_content").addClass("hidden");
+    $("#hours_content").removeClass("hidden");
+  });
+
 
 
 
