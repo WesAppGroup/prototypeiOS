@@ -53,7 +53,6 @@ body {
   right: 0px;
   top: 13%;
   bottom: 0px;
-  background-color: #c5c7d3;
 }
 
 /* COURSE LIST */
@@ -203,7 +202,6 @@ ul {
 /* SEARCH BAR */
 #wm_search_bar {
   display: block;
-  width: 98%;
   height: 70px;
   margin: 10px;
   position: relative;

@@ -3,8 +3,7 @@
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 10%;
-  background-color:#c5c7d3;
+  top: 13.5%;
   width: 100%;
 }
 
@@ -13,7 +12,7 @@
   float: left;
   width: 15%;
   height: 100%;
-  padding: 0px 0px 0px 0px;
+  padding: 6px 5px 0px 9px;
 }
 
 .menus_img img {
@@ -30,7 +29,7 @@ padding-top: 10px;
 .menus_go_home {
   width: 15%;
   display: inline-block;
-  padding: 10px 10px 10px 10px;
+  padding: 15px 10px 10px 10px;
   float: right;
   border-left: 1px solid #ffffff;
   text-align: center;
@@ -75,7 +74,9 @@ padding-top: 10px;
   background-color: white;
   margin: 5%;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.48);
+  border-style:dashed;
+  border-width: 1px;
+  border-color:rgba(91, 91, 91, 0.21);
 }
 
 .menu-item {
@@ -83,7 +84,7 @@ padding-top: 10px;
   display: block;
 }
 
-/* Food categoies */
+/* Food categories */
 .kosher{
   color: #000000;
 }

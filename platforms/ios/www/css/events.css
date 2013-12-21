@@ -20,7 +20,7 @@ body {
     top: 14.5%;
     bottom: 10%;
     width: 100%;
-    height: 84%;
+    height: 79%;
 }
 #e_title {
     display: inline-block;
@@ -74,7 +74,7 @@ a, a:hover {
     left: 0px;
     width: 100%;
     background-color: #242833;
-    height: 6%;
+    height: 7%;
     color: #ffffff;
 }
 #e_home_button {
@@ -184,7 +184,6 @@ a, a:hover {
 }
 #events_list {
     font-size: 25px;
-    background: #fff;
     color: #333;
 }
 #events_ul {
@@ -363,7 +362,7 @@ a, a:hover {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    height: 6%;
+    height: 8%;
     background-color: #242833;
 }
 
@@ -416,9 +415,6 @@ a, a:hover {
   height: 100%;
 }
 
-#events_list_content {
-  background-color: #c5c7d3;
-}
 
 
 
@@ -441,18 +437,18 @@ a, a:hover {
     height: 9%;
     width: auto;
     padding-right: 2%;
-    padding-top: 1%;
+    padding-top: 2%;
 }
 .events_list_header > div {
   display: inline-block;
   position: absolute;
-  left: 120px;
+  left: 115px;
+  margin-top: 13px
 }
 
 #events_list #events_list_stuff {
   height: 90%;
   width: 100%;
-  background-color: #c5c7d3;
 }
 
 .cat_label {
@@ -487,7 +483,7 @@ a, a:hover {
   display: block;
   position: relative;
   height: 100%;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   background-image: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -506,7 +502,8 @@ a, a:hover {
 /*CSS For the read more page*/
 
 #events_read_more2{
-  margin: 7%; 
+  margin: 7%;
+  padding-bottom: 7%;
 }
 
 #read_more_title {
