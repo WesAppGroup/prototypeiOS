@@ -47,7 +47,7 @@
 }
 /* =========   WESMAPS SEARCH ========= */
 body {
-  background-color: #c5c7d3;
+  background-color: rgba(228, 228, 153, 0.33);
 }
 .wesmaps_content {
   position: absolute;

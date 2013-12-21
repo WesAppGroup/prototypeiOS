@@ -14,6 +14,7 @@ function startApp() {
     if ($(this).attr('value') === "home") {
       $(".page").addClass("hidden");
       $("#home").removeClass("hidden");
+      resetBorders();
     }
     else if ($(this).attr('value') === "wesmaps") {
       $(".page").addClass("hidden");

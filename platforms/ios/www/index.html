@@ -51,7 +51,30 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-
+    
+    <script type="text/javascript">
+        function changeBorder(element,direction){
+        console.log(direction);
+            if (direction == "down"){
+                element.childNodes[1].style.borderTopRightRadius = "36px";
+                element.childNodes[1].style.borderBottomRightRadius = "0px";
+            }
+            else if (direction == "up"){
+                element.childNodes[1].style.borderBottomRightRadius = "36px";
+                element.childNodes[1].style.borderTopRightRadius = "0px";
+            }
+        }
+        function resetBorders(){
+            var elements = document.getElementsByClassName("goto_page");
+            for (i=0;i<5;i++){
+                console.log(elements[i])
+                changeBorder(elements[i],"up");
+            }
+        }
+            
+            
+    </script>
+    
 
     <title>Prototype</title>
   </head>
@@ -64,31 +87,31 @@
       <div class="content" id="home_content">
         <ul class="listview">
           <li>
-            <a href="#" class="goto_page" value="wesmaps">
+            <a href="#" class="goto_page" value="wesmaps" ontouchstart="changeBorder(this,'down')">
               <div class="fance wesmaps"><img src="img/wesmaps.png" /></div>
               <div class="button-text">WesMaps</div>
             </a>
           </li>
           <li>
-            <a href="#" id="event_nav" class="goto_page" value="events">
+            <a href="#" id="event_nav" class="goto_page" value="events" ontouchstart="changeBorder(this,'down')">
               <div class="fance events"><img src="img/events.png" /></div>
               <div class="button-text">Events</div>
             </a>
           </li>
           <li>
-            <a href="#" class="goto_page" value="menus">
+            <a href="#" class="goto_page" value="menus" ontouchstart="changeBorder(this,'down')">
               <div class="fance menus"><i class="fa fa-cutlery fa-2x"></i></div>
               <div class="button-text">Hours and Menus</div>
             </a>
           </li>
           <li>
-            <a href="#" class="goto_page" value="landmarks">
+            <a href="#" class="goto_page" value="landmarks" ontouchstart="changeBorder(this,'down')">
               <div class="fance landmarks"><img src="img/landmarks.png" /></div>
               <div class="button-text">Landmarks</div>
             </a>
           </li>
           <li>
-            <a href="#" class="goto_page" value="donate">
+            <a href="#" class="goto_page" value="donate" ontouchstart="changeBorder(this,'down')">
               <div class="fance donate"><img src="img/donate.png" /></div>
               <div class="button-text">Donate</div>
             </a>
