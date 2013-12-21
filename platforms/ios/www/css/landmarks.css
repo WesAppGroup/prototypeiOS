@@ -2,13 +2,11 @@
 
 /* ====== Landmarks List =====*/
 #landmarks_content {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 10%;
-  bottom: 0px;
-  height: 90%;
-  background-color: #c5c7d3;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 13.5%;
+    width: 100%;
 }
 
 #lm_list ul {
@@ -43,11 +41,12 @@
 }
 
 .lm-also {
-  width: 98%;
-  padding: 10px 5px 10px 5px;
-  font-size: 10px;
-  height: auto;
-  border-bottom: 1px solid #ffffff;
+    width: 98%;
+    padding: 10px 5px 10px 5px;
+    font-size: 14px;
+    height: auto;
+    border-bottom: 1px solid #ffffff;
+    font-style: italic;
 }
 
 .lm-desc {
