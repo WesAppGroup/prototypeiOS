@@ -10,7 +10,6 @@ function startEvents() {
       element.eventTime = new Date(element.eventTime * 1000);
       return element;
     });
-    console.log(events, "events");
     console.log("initialize called");
     return initialize(events);
   }
@@ -229,12 +228,19 @@ function startEvents() {
       'Admissions': 'marker_3.png',
       'Theater': 'marker_4.png',
       'Student Groups': 'marker_8.png',
+      'Performances': 'marker_5.png',
       'Other': 'marker_9.png'
     };
 
     function markerize(pos, str, ev) {
+        if (!(ev.eventCategory)) {
+          var cat = 'Other';
+        }
+        else {
+            var cat = ev.eventCategory;
+        }
       var pinIcon = new google.maps.MarkerImage(
-        'resources/' + icons[ev.eventCategory],
+                                                'resources/' + icons[cat],
         new google.maps.Size(25, 25), /* size is determined at runtime */
         new google.maps.Point(0, 0), /* origin is 0,0 */
         new google.maps.Point(12.5, 12.5), /* anchor is bottom center of the scaled image */
@@ -279,7 +285,7 @@ function startEvents() {
         description.setAttribute('class', 'well');
         description.innerHTML = ev.eventDescription;
         var link = document.createElement('a');
-        link.setAttribute('href', ev.eventLink);
+        link.setAttribute('onclick', 'window.open("'+ev.eventLink+'", "_blank", "location=yes")');
         link.setAttribute('id', 'read_more_link');
         link.innerHTML = "Read original";
         description.appendChild(link);
@@ -473,7 +479,6 @@ function startEvents() {
           // var div_cat = document.createElement('div');
           if (checkbox) {
             var passed = events[i].eventTime < currenttime.getTime();
-            console.log(passed,events[i].eventTime,currenttime.getTime())
             if (passed) {
               newli.setAttribute('style', 'background: rgba(162, 162, 162, 0.86)');
             } else {
@@ -613,7 +618,6 @@ function startEvents() {
         if (event_list[i].eventTime < currenttime.getTime()) {
           var passed = true;
         }
-        console.log(passed)
         var newli = document.createElement('li');
         if (passed) {
           newli.setAttribute('style', 'background: rgba(162, 162, 162, 0.86)');
@@ -770,7 +774,6 @@ function startEvents() {
     sortLocation(events, checkbox);
 
 
-    // console.log(events)
     /* Logic for instant search of events list. It removes events
      * that do not match the search bar from the DOM and keeps
      * them in an array. It adds them back into the DOM when the
