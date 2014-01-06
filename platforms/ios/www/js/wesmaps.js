@@ -111,6 +111,7 @@ function startWesmaps() {
                    coursesJSON = undefined;
                    coursesJSON = $.parseJSON(cHttpRequest.responseText);
                    console.log("courses json received");
+                     console.log(coursesJSON);
                    writeCourses();
                    }
                    else {

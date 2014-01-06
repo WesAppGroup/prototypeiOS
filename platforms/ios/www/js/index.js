@@ -2,9 +2,11 @@
  */
 function startApp() {
   console.log('app started');
+  var firstAppInstance = new Date();
   var first_events_visit = true;
   var firstMenusVisit = true;
   var firstLandmarksVisit = true;
+  var appLifeTime = 10; //this is the number of minutes after which the app will refresh upon next open
 
   /* Links buttons */
   $(document).on("click", ".goto_page",function(e) {
@@ -69,5 +71,22 @@ function startApp() {
     console.log("back button hit");
     $($(".wm-go-home > a")[0]).click();
   };
-  document.addEventListener("backbutton", backListen, false);
+  
+    function onResume(){
+        //when the app is re-opened, might want to implement some sort of time check here to
+        //refresh the app after x number of minutes? For now, it'll reload everything every time.
+        var now = new Date();
+        console.log(firstAppInstance);
+        var diff = (now-firstAppInstance)/60/60/60; //converting to minutes
+        if (diff > appLifeTime){
+            console.log("Refreshing app");
+            document.location.reload();
+        }
+        else{
+            console.log("not refreshing",appLifeTime-diff,"minutes to go");
+        }
+    }
+    
+    document.addEventListener("backbutton", backListen, false);
+    document.addEventListener("resume", onResume, false);
 }
