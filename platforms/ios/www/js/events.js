@@ -301,6 +301,9 @@ function startEvents() {
 
       return marker;
     }
+      
+    document.onload
+    
 
     /* Adds events to map
      */
@@ -806,22 +809,18 @@ function startEvents() {
     google.maps.event.trigger(map, 'resize');
     center = new google.maps.LatLng(41.5526833, -72.6612454);
     map.setCenter(center);
-  }
 
-  // google.maps.event.addDomListener(window, 'load', initialize);
-  // initialize();
-  // setTimeout(function() {
-  //   google.maps.event.trigger(map, 'resize');
-  //   center = new google.maps.LatLng(41.5526833, -72.6612454);
-  //   map.setCenter(center);
-  // }, 100);
+    //dynamically change the size of the map based on iphone screen size. Hacky.
+    console.log("HEIGHT = ",document.documentElement.clientHeight);
+    if (document.documentElement.clientHeight < 500){
+        console.log($("#map-canvas")[0].style);
+        $("#map-canvas")[0].style.height = "76%";
+    }
+    else {
+        $("#map-canvas")[0].style.height = "80%";
+    }
+  }
+    
 
   get_events_main(parse_events);
 }
-
-// $(document).ready(function() {
-//   $("#event_nav")[0].addEventListener("click", function() {
-//     // startEvents()
-//     console.log("starting maps")
-//   })
-// })
