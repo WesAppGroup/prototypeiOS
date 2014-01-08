@@ -84,148 +84,148 @@ function startWesmaps() {
     
     /* Searches database for courses matching search and update dom */
     $("#wm_icon").on("click", function() {
-                   $("#wm_courses").empty();
-                   
-                   sem = $("#wm-s-f > select :selected").text().toLowerCase();
-                   
-                   var search = $("#wm_bar > input").val();
-                   var req = COURSES_SEARCH + search;
-                   
-                   /* AJAX request for course search */
-                   cHttpRequest = new XMLHttpRequest();
-                   
-                   if (!cHttpRequest) {
-                   alert("Server Request failed");
-                   return false;
-                   }
-                   
-                   cHttpRequest.onreadystatechange = alertCourses;
-                   cHttpRequest.open("GET", req, true);
-                   cHttpRequest.send();
-                   console.log('course request sent for sem '+sem);
-                   
-                   /* courses search callback */
-                   function alertCourses() {
-                   if (cHttpRequest.readyState === 4) {
-                   if (cHttpRequest.status === 200) {
-                   coursesJSON = undefined;
-                   coursesJSON = $.parseJSON(cHttpRequest.responseText);
-                   console.log("courses json received");
+                     $("#wm_courses").empty();
+                     
+                     sem = $("#wm-s-f > select :selected").text().toLowerCase();
+                     
+                     var search = $("#wm_bar > input").val();
+                     var req = COURSES_SEARCH + search;
+                     
+                     /* AJAX request for course search */
+                     cHttpRequest = new XMLHttpRequest();
+                     
+                     if (!cHttpRequest) {
+                     alert("Server Request failed");
+                     return false;
+                     }
+                     
+                     cHttpRequest.onreadystatechange = alertCourses;
+                     cHttpRequest.open("GET", req, true);
+                     cHttpRequest.send();
+                     console.log('course request sent for sem '+sem);
+                     
+                     /* courses search callback */
+                     function alertCourses() {
+                     if (cHttpRequest.readyState === 4) {
+                     if (cHttpRequest.status === 200) {
+                     coursesJSON = undefined;
+                     coursesJSON = $.parseJSON(cHttpRequest.responseText);
+                     console.log("courses json received");
                      console.log(coursesJSON);
-                   writeCourses();
-                   }
-                   else {
-                   alert("Course request Failed");
-                   }
-                   }
-                   }
-                   });
+                     writeCourses();
+                     }
+                     else {
+                     alert("Course request Failed");
+                     }
+                     }
+                     }
+                     });
     
     function clickListener(){
         console.log("click listening");
         $(".wm_c_expand").on("click", function() {
-                       var that = $(this);
-                       var li = $(this).parent().parent();
-                       var info = $(this).parent();
-                       var tbody = info.children('.wm-table').children('table').children('tbody');
-                       
-                       var ccid = $(this).data().ccid ? $(this).data().ccid : 0;
-                       var sid = $(this).data().sid ? $(this).data().sid : 0;
-                       
-                       var sn = sem === "fall" ? 1 : sem === "spring" ? 2 : 0;
-                       var req = SECTIONS_BY_ID + ccid + "/" + sn;
-                       
-                       /* AJAX sections request */
-                       sHttpRequest = new XMLHttpRequest();
-                       if (!sHttpRequest) {
-                       alert("Failed");
-                       return false;
-                       }
-                       
-                       sHttpRequest.onreadystatechange = showSection;
-                       sHttpRequest.open("GET", req, true);
-                       sHttpRequest.send();
-                       console.log('sections request sent: '+req);
-                       
-                       /* Section request callback */
-                       function showSection() {
-                       if (sHttpRequest.readyState === 4) {
-                       if (sHttpRequest.status === 200) {
-                       sectionsJSON = undefined;
-                       sectionsJSON = $.parseJSON(sHttpRequest.responseText);
-                       console.log('sections json received');
-                       if (sid < sectionsJSON.length) {
-                       expandSection(sectionsJSON[sid].value);
-                       }
-                       else {
-                       expandSection(sectionsJSON[0].value);
-                       }
-                       }
-                       else {
-                       alert("Sections request Failed");
-                       }
-                       }
-                       }
-                       /* expands a course to show its section information */
-                       function expandSection(s) {
-                       var text = tbody.children('tr').children('td').children('.wm_c_desc');
-                       var scH = 0;
-                       var taH = 0;
-                       var loops = 0;
-                       liH = getLiHeight();
-                       liHeight = getLiHeight();
-                       if (that.children('i').hasClass('fa-plus-square-o')) {
-                       console.log("expanding course");
-                       tbody.children('tr').children('.wm_c_prof').html(parseProf(s.sectionProfessors));
-                       tbody.children('tr').children('.wm_c_time').html(s.sectionTime);
-                       tbody.children('tr').children('.wm_c_loc').html(s.sectionLocation);
-                       tbody.children('tr').children('.wm_c_seats').html('seats: ' + s.sectionSeats_available);
-                       
-                       info.children('.wm-table').removeClass('hidden');
-                       
-                       that.html("<i class='fa fa-minus-square-o fa-3x'></i>");
-                       info.addClass('wm-info-expanded');
-                       
-                       console.log("liH: "+liH+"\t");
-                       li.children('.wm_c_dnum').height(dim[1] / 10);
-                       
-                       scH = text[0].scrollHeight;
-                       taH = text.innerHeight();
-                       
-                       if (li.data().liHeight) {
-                       li.height(li.data().liHeight);
-                       }
-                       else {
-                       while (scH > (text.innerHeight())) {
-                       console.log('liH: '+liH+'\t');
-                       console.log('taH: '+taH+'\t');
-                       console.log('The scrollHeight '+text[0].scrollHeight+' is bigger than the textheight '+text.innerHeight());
-                       console.log("liHeight "+li.height());
-                       li.height(liHeight + 10);
-                       liHeight += 10;
-                       text.height(taH + 10);
-                       taH += 10;
-                       loops += 1;
-                       if (loops > 300) {
-                       break;
-                       }
-                       console.log("liH: "+liH+"\t");
-                       }
-                       li.height(li.height() + dim[1] / 2.5);
-                       li.data("liHeight", li.height());
-                       }
-                       }
-                       else {
-                       console.log("collapsing course");
-                       console.log("liH: "+liH+"\t");
-                       that.html("<i class='fa fa-plus-square-o fa-3x'></i>");
-                       info.removeClass('wm-info-expanded');
-                       info.children('.wm-table').addClass('hidden');
-                       console.log('collapsing liH: '+liH+'\t');
-                       li.height(dim[1] / 10);
-                       }
-                       }
-                       });
+                             var that = $(this);
+                             var li = $(this).parent().parent();
+                             var info = $(this).parent();
+                             var tbody = info.children('.wm-table').children('table').children('tbody');
+                             
+                             var ccid = $(this).data().ccid ? $(this).data().ccid : 0;
+                             var sid = $(this).data().sid ? $(this).data().sid : 0;
+                             
+                             var sn = sem === "fall" ? 1 : sem === "spring" ? 2 : 0;
+                             var req = SECTIONS_BY_ID + ccid + "/" + sn;
+                             
+                             /* AJAX sections request */
+                             sHttpRequest = new XMLHttpRequest();
+                             if (!sHttpRequest) {
+                             alert("Failed");
+                             return false;
+                             }
+                             
+                             sHttpRequest.onreadystatechange = showSection;
+                             sHttpRequest.open("GET", req, true);
+                             sHttpRequest.send();
+                             console.log('sections request sent: '+req);
+                             
+                             /* Section request callback */
+                             function showSection() {
+                             if (sHttpRequest.readyState === 4) {
+                             if (sHttpRequest.status === 200) {
+                             sectionsJSON = undefined;
+                             sectionsJSON = $.parseJSON(sHttpRequest.responseText);
+                             console.log('sections json received');
+                             if (sid < sectionsJSON.length) {
+                             expandSection(sectionsJSON[sid].value);
+                             }
+                             else {
+                             expandSection(sectionsJSON[0].value);
+                             }
+                             }
+                             else {
+                             alert("Sections request Failed");
+                             }
+                             }
+                             }
+                             /* expands a course to show its section information */
+                             function expandSection(s) {
+                             var text = tbody.children('tr').children('td').children('.wm_c_desc');
+                             var scH = 0;
+                             var taH = 0;
+                             var loops = 0;
+                             liH = getLiHeight();
+                             liHeight = getLiHeight();
+                             if (that.children('i').hasClass('fa-plus-square-o')) {
+                             console.log("expanding course");
+                             tbody.children('tr').children('.wm_c_prof').html(parseProf(s.sectionProfessors));
+                             tbody.children('tr').children('.wm_c_time').html(s.sectionTime);
+                             tbody.children('tr').children('.wm_c_loc').html(s.sectionLocation);
+                             tbody.children('tr').children('.wm_c_seats').html('seats: ' + s.sectionSeats_available);
+                             
+                             info.children('.wm-table').removeClass('hidden');
+                             
+                             that.html("<i class='fa fa-minus-square-o fa-3x'></i>");
+                             info.addClass('wm-info-expanded');
+                             
+                             console.log("liH: "+liH+"\t");
+                             li.children('.wm_c_dnum').height(dim[1] / 10);
+                             
+                             scH = text[0].scrollHeight;
+                             taH = text.innerHeight();
+                             
+                             if (li.data().liHeight) {
+                             li.height(li.data().liHeight);
+                             }
+                             else {
+                             while (scH > (text.innerHeight())) {
+                             console.log('liH: '+liH+'\t');
+                             console.log('taH: '+taH+'\t');
+                             console.log('The scrollHeight '+text[0].scrollHeight+' is bigger than the textheight '+text.innerHeight());
+                             console.log("liHeight "+li.height());
+                             li.height(liHeight + 10);
+                             liHeight += 10;
+                             text.height(taH + 10);
+                             taH += 10;
+                             loops += 1;
+                             if (loops > 300) {
+                             break;
+                             }
+                             console.log("liH: "+liH+"\t");
+                             }
+                             li.height(li.height() + dim[1] / 2.5);
+                             li.data("liHeight", li.height());
+                             }
+                             }
+                             else {
+                             console.log("collapsing course");
+                             console.log("liH: "+liH+"\t");
+                             that.html("<i class='fa fa-plus-square-o fa-3x'></i>");
+                             info.removeClass('wm-info-expanded');
+                             info.children('.wm-table').addClass('hidden');
+                             console.log('collapsing liH: '+liH+'\t');
+                             li.height(dim[1] / 10);
+                             }
+                             }
+                             });
     }
     function writeCourses() {
         var lastCourse = 0;
@@ -274,12 +274,12 @@ function startWesmaps() {
                                             "<td class='wm_c_sem'>" + c.courseSemester + "</td>" +
                                             "<td class='wm_c_gea'>" + c.courseGenEdArea + "</td>" +
                                             "</tr>" +
-                                            "<tr>" + 
+                                            "<tr>" +
                                             "<td><textarea class='wm_c_desc'>"+ c.courseDescription + "</textarea></td>" +
-                                            "</tr>" + 
-                                            "</table>" + 
+                                            "</tr>" +
+                                            "</table>" +
                                             "</div>" +
-                                            "</div>" + 
+                                            "</div>" +
                                             "</li>"
                                             );
                     $('#wm_c_' + c.courseCourseid).data('ccid', c.courseCourseid);

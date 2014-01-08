@@ -73,8 +73,7 @@ function startApp() {
   };
   
     function onResume(){
-        //when the app is re-opened, might want to implement some sort of time check here to
-        //refresh the app after x number of minutes? For now, it'll reload everything every time.
+        //refresh the app after 10 minutes (only during app-resume).
         var now = new Date();
         console.log(firstAppInstance);
         var diff = (now-firstAppInstance)/60/60/60; //converting to minutes
