@@ -813,8 +813,9 @@ function startEvents() {
     //dynamically change the size of the map based on iphone screen size. Hacky.
     console.log("HEIGHT = ",document.documentElement.clientHeight);
     if (document.documentElement.clientHeight < 500){
-        console.log($("#map-canvas")[0].style);
+//        console.log($("#map-canvas")[0].style.height);
         $("#map-canvas")[0].style.height = "76%";
+//        console.log($("#map-canvas")[0].style.height);
     }
     else {
         $("#map-canvas")[0].style.height = "80%";
