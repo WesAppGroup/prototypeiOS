@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.github.wesappgroup" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>WesApp</name>
+    <description>
+	An app for the Wesleyan campus.
+    </description>
+    <author email="jlipton@wesleyan.edu" href="wesappgroup.github.io">
+	The Wes App Group
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+    </feature>
+</widget>
