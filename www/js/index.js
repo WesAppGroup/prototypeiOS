@@ -51,7 +51,8 @@ function startApp() {
       $("#menus").removeClass("hidden");
     }
     else if ($(this).attr('value') === "donate") {
-      startDonate();
+      $(".page").addClass("hidden");
+      $("#donate").removeClass("hidden");
     }
     else if ($(this).attr('value') === "landmarks") {
       firstLandmarksVisit ? startLandmarks() : function(){};
