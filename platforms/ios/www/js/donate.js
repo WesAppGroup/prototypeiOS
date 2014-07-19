@@ -6,4 +6,5 @@ function startDonate() {
    //ref.addEventListener('loadstop', function() { console.log('stop: ' + event.url); });
    //ref.addEventListener('exit', function() { ref.close(); });
    //ref.addEventListener('loaderror', function() { ref.close(); });
+  document.getElementById('donate_iframe').src = document.getElementById('donate_iframe').src;
 }
