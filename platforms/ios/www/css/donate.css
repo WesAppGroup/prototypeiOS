@@ -1,11 +1,10 @@
 /* DONATE CSS */
-#donate_content iframe {
+#donate iframe {
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 10%;
+  top: 15%;
   bottom: 0px;
   width: 100%;
-  height: 90%;
-  margin-top: 10%;
+  height: 85%;
 }

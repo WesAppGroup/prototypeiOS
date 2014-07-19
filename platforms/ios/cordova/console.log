@@ -225,3 +225,96 @@ You could find it at the following address https://developer.apple.com/icloud/do
 2014-06-30 15:08:01.164 WesApp[3873:70b] [CDVTimer][TotalPluginStartup] 6.552994ms
 2014-06-30 15:08:01.197 WesApp[3873:70b] Resetting plugins due to page load.
 2014-06-30 15:08:01.565 WesApp[3873:70b] Finished load of: file:///Users/justinraymond/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/85A340BA-A048-4D3B-83DE-A558566B4439/WesApp.app/www/index.html
+2014-06-30 17:59:39.800 WesApp[4945:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-30 17:59:39.805 WesApp[4945:70b] Unlimited access to network resources
+2014-06-30 17:59:39.807 WesApp[4945:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-30 17:59:39.883 WesApp[4945:70b] [CDVTimer][splashscreen] 64.386010ms
+2014-06-30 17:59:39.883 WesApp[4945:70b] [CDVTimer][TotalPluginStartup] 64.821005ms
+2014-06-30 17:59:40.034 WesApp[4945:70b] Resetting plugins due to page load.
+2014-06-30 17:59:41.629 WesApp[4945:70b] Finished load of: file:///Users/justinraymond/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/85A340BA-A048-4D3B-83DE-A558566B4439/WesApp.app/www/index.html
+Terminating in response to SpringBoard's termination.
+2014-06-30 18:12:48.513 WesApp[5196:70b] Multi-tasking -> Device: YES, App: YES
+2014-06-30 18:12:48.720 WesApp[5196:70b] Unlimited access to network resources
+2014-06-30 18:12:48.722 WesApp[5196:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-06-30 18:12:49.459 WesApp[5196:70b] [CDVTimer][splashscreen] 102.793038ms
+2014-06-30 18:12:49.459 WesApp[5196:70b] [CDVTimer][TotalPluginStartup] 103.193998ms
+2014-06-30 18:12:49.527 WesApp[5196:70b] Resetting plugins due to page load.
+2014-06-30 18:12:51.253 WesApp[5196:70b] Finished load of: file:///Users/justinraymond/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/85A340BA-A048-4D3B-83DE-A558566B4439/WesApp.app/www/index.html
+2014-07-19 13:22:30.017 WesApp[1186:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-19 13:22:30.212 WesApp[1186:70b] Unlimited access to network resources
+2014-07-19 13:22:30.239 WesApp[1186:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-07-19 13:22:30.744 WesApp[1186:70b] [CDVTimer][splashscreen] 126.730978ms
+2014-07-19 13:22:30.745 WesApp[1186:70b] [CDVTimer][TotalPluginStartup] 127.160013ms
+2014-07-19 13:22:30.813 WesApp[1186:70b] Resetting plugins due to page load.
+2014-07-19 13:22:31.369 WesApp[1186:70b] Finished load of: file:///Users/justinraymond/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/85A340BA-A048-4D3B-83DE-A558566B4439/WesApp.app/www/index.html
+2014-07-19 13:22:34.388 WesApp[1186:70b] Resetting plugins due to page load.
+2014-07-19 13:22:37.775 WesApp[1186:70b] Finished load of: http://thisiswhy.wesleyan.edu/waystogive
+2014-07-19 13:22:57.974 WesApp[1186:70b] Resetting plugins due to page load.
+2014-07-19 13:22:59.732 WesApp[1186:70b] Finished load of: https://thisiswhy.wesleyan.edu/givenow
+2014-07-19 13:30:19.750 WesApp[1401:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-19 13:30:19.755 WesApp[1401:70b] Unlimited access to network resources
+2014-07-19 13:30:19.757 WesApp[1401:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-07-19 13:30:19.775 WesApp[1401:70b] [CDVTimer][splashscreen] 5.954027ms
+2014-07-19 13:30:19.775 WesApp[1401:70b] [CDVTimer][TotalPluginStartup] 6.339967ms
+2014-07-19 13:30:19.808 WesApp[1401:70b] Resetting plugins due to page load.
+2014-07-19 13:30:20.190 WesApp[1401:70b] Finished load of: file:///Users/justinraymond/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/85A340BA-A048-4D3B-83DE-A558566B4439/WesApp.app/www/index.html
+2014-07-19 13:31:38.646 WesApp[1401:70b] Resetting plugins due to page load.
+2014-07-19 13:31:39.911 WesApp[1401:70b] Finished load of: http://thisiswhy.wesleyan.edu/waystogive
+2014-07-19 13:31:41.103 WesApp[1401:70b] Resetting plugins due to page load.
+2014-07-19 13:31:42.719 WesApp[1401:70b] Finished load of: https://thisiswhy.wesleyan.edu/givenow
+2014-07-19 13:32:44.819 WesApp[1597:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-19 13:32:44.824 WesApp[1597:70b] Unlimited access to network resources
+2014-07-19 13:32:44.826 WesApp[1597:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-07-19 13:32:44.844 WesApp[1597:70b] [CDVTimer][splashscreen] 6.430030ms
+2014-07-19 13:32:44.845 WesApp[1597:70b] [CDVTimer][TotalPluginStartup] 7.017016ms
+2014-07-19 13:32:44.908 WesApp[1597:70b] Resetting plugins due to page load.
+2014-07-19 13:32:45.252 WesApp[1597:70b] Finished load of: file:///Users/justinraymond/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/85A340BA-A048-4D3B-83DE-A558566B4439/WesApp.app/www/index.html
+2014-07-19 13:33:15.452 WesApp[1597:70b] Resetting plugins due to page load.
+2014-07-19 13:33:16.537 WesApp[1597:70b] Finished load of: http://thisiswhy.wesleyan.edu/waystogive
+2014-07-19 13:34:55.985 WesApp[1597:70b] Resetting plugins due to page load.
+2014-07-19 13:34:57.725 WesApp[1597:70b] Finished load of: http://thisiswhy.wesleyan.edu/
+2014-07-19 13:37:52.897 WesApp[1597:70b] Resetting plugins due to page load.
+2014-07-19 13:37:54.504 WesApp[1597:70b] Finished load of: https://thisiswhy.wesleyan.edu/givenow
+2014-07-19 13:37:58.913 WesApp[1803:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-19 13:37:58.918 WesApp[1803:70b] Unlimited access to network resources
+2014-07-19 13:37:58.920 WesApp[1803:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-07-19 13:37:58.939 WesApp[1803:70b] [CDVTimer][splashscreen] 6.419003ms
+2014-07-19 13:37:58.939 WesApp[1803:70b] [CDVTimer][TotalPluginStartup] 6.814003ms
+2014-07-19 13:37:58.978 WesApp[1803:70b] Resetting plugins due to page load.
+2014-07-19 13:38:00.422 WesApp[1803:70b] Finished load of: file:///Users/justinraymond/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/85A340BA-A048-4D3B-83DE-A558566B4439/WesApp.app/www/index.html
